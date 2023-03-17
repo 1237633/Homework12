@@ -1,4 +1,4 @@
-package Homework12;
+package Homework13;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,22 +13,16 @@ public class Main {
         printBookInfo(gnomikGena);
         gnomikGena.setYear(2012);
         printBookInfo(gnomikGena);
-        // Не по заданию ↓
-        printBookInfo(borodino);
-        printAuthorOfBook(verse);
+
 
 
 
     }
 
     public static void printBookInfo(Book book) {
-        System.out.println(book.getName() + ", " + book.getAuthorName() + ", " + book.getYear());
+        System.out.println(book.getName() + ", " + book.getAuthor().getFullName() + ", " + book.getYear());
         System.out.println(" ");
+
     }
 
-    //Эксперимент над мышами ↓
-    public static void printAuthorOfBook(Book book) {
-        System.out.println(book.getAuthorObject().getFullName());
-        System.out.println(" ");
-    }
 }
